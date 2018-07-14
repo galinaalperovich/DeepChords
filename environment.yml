@@ -1,4 +1,4 @@
-name: deepchords
+name: deep_chords
 channels:
   - defaults
 dependencies:
@@ -118,5 +118,5 @@ dependencies:
   - zlib=1.2.11=hf3cbc9b_2
   - pip:
     - music21==5.1.0
-prefix: /Users/alperovich/miniconda3/envs/deepchords
+prefix: /Users/alperovich/miniconda3/envs/deep_chords
 
