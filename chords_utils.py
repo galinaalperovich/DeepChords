@@ -29,7 +29,8 @@ def process_folder_to_csv(csv_name='data/chords.csv', folder_name='db/Wikifonia'
         for i, fname in enumerate(files):
             print(f'{i}/{n}', end='\r', flush=True)
             try:
-                writer.writerow([fname, str(get_harmonies(f'{folder_name}/{fname}'))])
+                song_harmonies = get_harmonies(f'{folder_name}/{fname}')
+                writer.writerow([fname, str(song_harmonies)])
                 if i % 10 == 0:
                     f.flush()
             except Exception as err:
