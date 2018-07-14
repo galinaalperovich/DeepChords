@@ -15,7 +15,7 @@ def get_harmonies(path):
     return harmonies
 
 
-def process_folder_to_csv(csv_name='chords.csv', folder_name='Wikifonia', first_n=None):
+def process_folder_to_csv(csv_name='data/chords.csv', folder_name='db/Wikifonia', first_n=None):
     files = os.listdir(folder_name)
     n = len(files)
     csv_filename = csv_name
